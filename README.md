@@ -1,8 +1,18 @@
 ##Learning Ruby
 
 [Ruby Programming Language - Full Course](https://youtu.be/t_ispmWmdjY)
+Use RVM (Ruby Version manager) to update Ruby. [Instruction for installing RVM](https://rvm.io/)
+```$ rvm -v
+rvm 1.29.10 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+```
+Install Ruby and Rails,
+```$ \curl -sSL https://get.rvm.io | bash -s stable --rails
+$ ruby -v
+ruby 2.7.0p0 (2019-12-25 revision 647ee6f091) [x86_64-darwin18]
+```
 
 1. [Hello World / Setup](https://youtu.be/t_ispmWmdjY)
+
 2. [Windows Installation](https://youtu.be/t_ispmWmdjY)
 3. [Mac Installation](https://youtu.be/t_ispmWmdjY)
 4. [Hello World / Setup](https://youtu.be/t_ispmWmdjY)
