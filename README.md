@@ -57,7 +57,7 @@ puts(...) seems to work without the parenthesis.
 
 String variable
 
-```name = \"Mike\"
+```name = 
 ```
 
 Number variable
