@@ -1,6 +1,6 @@
 ##Learning Ruby
 
-[Ruby Programming Language - Full Course](https://youtu.be/t_ispmWmdjY)
+YouTube video - [Ruby Programming Language - Full Course](https://youtu.be/t_ispmWmdjY)
 
 1. [Introduction](https://youtu.be/t_ispmWmdjY?t=399)
 
@@ -57,15 +57,17 @@ puts(...) seems to work without the parenthesis.
 
 String variable
 
-```name = "Mike"
+```name = \"Mike\"
 ```
 
 Number variable
 
 ```age = 75
 ```
+
 Floating point number variable
 ```gpa = 3.2
+```
 
 boolean data type
 ```ismale = true
