@@ -52,9 +52,76 @@ puts ("He really liked the name " +  name)
 puts ("but didn't like being " + age + ".")
 ```
 puts(...) seems to work without the parenthesis.
+
 7. [Data Types](https://youtu.be/t_ispmWmdjY?t=1712)
 
+String variable
+
+```name = "Mike"
+```
+
+Number variable
+
+```age = 75
+```
+Floating point number variable
+```gpa = 3.2
+
+boolean data type
+```ismale = true
+istall= false
+```
+
+nil data type
+```flaws = nil
+```
+
 8. [Working With Strings](https://youtu.be/t_ispmWmdjY?t=1993)
+
+Escape a character inside a string
+```puts "Giraffe\" Academy"
+```
+
+New line inside a string
+```puts "Giraffe \n Acadmey"
+
+String methods:
+
+```phrase = "Giraffe Academy"
+puts phrase.upcase()
+puts phrase.downcase()
+```
+the strip() method removes leading and closing white spaces.
+```newPhrase = "   Giraffe   blah   "
+puts newPhrase.strip()
+```
+
+The length() method,
+```puts phrase.length()
+```
+
+The include method,
+```puts phrase.include? "raff"
+```
+
+Get index of a string,
+```puts phrase[3]
+```
+
+Get range of indices in a string,
+```puts phrase[0,3]
+```
+output: Gir
+
+As can be seen this does not include index 3 but guves the first three characters of the string.
+
+Get the index of the first instance of a character in a string
+```puts phrase.index("c")
+```
+
+These method can be used on things other than variables
+```puts "programming".upcase()
+```
 
 9. [Math & Numbers](https://youtu.be/t_ispmWmdjY?t=2645)
 
