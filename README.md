@@ -148,18 +148,18 @@ puts "programming".upcase()
 
 ```
 puts -5.9472
-puts 5 + 9
+puts 5 + 9 # 14
 ```
 Output: 14
 
 The usual operators and 2**3 is 2 to the power of 3, or the exponential. 2%3 is the modulus operator for remainder
 
 ```
-puts 5 - 9
-puts 5 *9
-puts 5 / 9
-puts 2**3
-puts 2%3
+puts 5 - 9 # -4
+puts 5 * 9 # 45
+puts 5 / 9 # 0
+puts 2**3 # 8
+puts 2%3 # 2 modulo gets reminder
 ```
 
 To concatenate a number to a string, the number must converted to a string using the method .to_s like this,
@@ -173,36 +173,36 @@ Methods on numbers:
 Get the absolute value of a number
 ```
 num = -20
-puts num.abs()
+puts num.abs() # 20
 ```
 Round to nearest integer,
 ```
 num = 20.687
-puts num.round()
+puts num.round() # 21
 ```
 
 Round up to the next integer
 ```
-num = 20.001
+num = 23.001 # 24
 puts num.ceil()
 ```
 
 Round down to the next integer
 ```
 num = 20.9989
-puts num.floor()
+puts num.floor() # 20
 ```
 
 Using the Math class:
 
 Getting the square root
 ```
-puts Math.sqrt(2116)
+puts Math.sqrt(2116) # 46.0
 ```
 
 Log function
 ```
-puts Math.log(100)
+puts Math.log(100) # 0.0
 ```
 
 ```
@@ -210,11 +210,13 @@ puts 1 + 7
 puts 1.0 + 7
 puts 1 + 7 # 8
 puts 1.0 + 7 # 8.0
-puts 10/7 # returns an integer
-puts 10/7.0 # returns a floating point number
+puts 10/7 # 1 returns an integer
+puts 10/7.0 # 1.4285714285714286 returns a floating point number
 ```
 
 10. [Getting User Input](https://youtu.be/t_ispmWmdjY?t=3174)
+
+
 
 11. [Building a Calculator](https://youtu.be/t_ispmWmdjY?t=3669)
 
