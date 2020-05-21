@@ -56,21 +56,23 @@ puts(...) seems to work without the parenthesis.
 7. [Data Types](https://youtu.be/t_ispmWmdjY?t=1712)
 
 String variable
-
-```name = 
+```
+name = "Mike"
 ```
 
 Number variable
-
-```age = 75
+```
+age = 75
 ```
 
 Floating point number variable
-```gpa = 3.2
+```
+gpa = 3.2
 ```
 
 boolean data type
-```ismale = true
+```
+ismale = true
 istall= false
 ```
 
