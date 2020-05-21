@@ -148,8 +148,9 @@ puts "programming".upcase()
 
 ```
 puts -5.9472
-puts 5 + 9 \\ 14
+puts 5 + 9
 ```
+Output: 14
 
 10. [Getting User Input](https://youtu.be/t_ispmWmdjY?t=3174)
 
