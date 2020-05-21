@@ -146,6 +146,11 @@ puts "programming".upcase()
 
 9. [Math & Numbers](https://youtu.be/t_ispmWmdjY?t=2645)
 
+```
+puts -5.9472
+puts 5 + 9 \\ 14
+```
+
 10. [Getting User Input](https://youtu.be/t_ispmWmdjY?t=3174)
 
 11. [Building a Calculator](https://youtu.be/t_ispmWmdjY?t=3669)
