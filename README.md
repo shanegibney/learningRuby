@@ -9,33 +9,39 @@ Not applicable
 
 3. [Mac Installation](https://youtu.be/t_ispmWmdjY?t=285)
 Use RVM (Ruby Version manager) to update Ruby. [Instruction for installing RVM](https://rvm.io/)
-```$ rvm -v
+```
+$ rvm -v
 rvm 1.29.10 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
 ```
 Install Ruby and Rails,
-```$ \curl -sSL https://get.rvm.io | bash -s stable --rails
+```
+$ \curl -sSL https://get.rvm.io | bash -s stable --rails
 $ ruby -v
 ruby 2.7.0p0 (2019-12-25 revision 647ee6f091) [x86_64-darwin18]
 ```
 4. [Hello World / Setup](https://youtu.be/t_ispmWmdjY?t=722)
 Add package atom-ruuner to Atom to run Ruby scripts inside Atom.
 giraffe.rb
-```print "hello ruby"
+```
+print "hello ruby"
 ```
 ctrl+r to run atom-runner
 
 5. [Drawing a Shape](https://youtu.be/t_ispmWmdjY?t=721)
 'print' does not include a new line, 'puts' does include a new line.
-```print "hello"
+```
+print "hello"
 puts "world"
 puts "hiya"
 ```
 Output
-```Hello Rubyhelloworld
+```
+Hello Rubyhelloworld
 hiya
 ```
 Basic shape,
-```puts "    /|"
+```
+puts "    /|"
 puts "   / |"
 puts "  /  |"
 puts " /___|"
@@ -77,21 +83,26 @@ istall= false
 ```
 
 nil data type
-```flaws = nil
+```
+flaws = nil
 ```
 
 8. [Working With Strings](https://youtu.be/t_ispmWmdjY?t=1993)
 
 Escape a character inside a string
-```puts "Giraffe\" Academy"
+```
+puts "Giraffe\" Academy"
 ```
 
 New line inside a string
-```puts "Giraffe \n Acadmey"
+```
+puts "Giraffe \n Acadmey"
+```
 
 String methods:
 
-```phrase = "Giraffe Academy"
+```
+phrase = "Giraffe Academy"
 puts phrase.upcase()
 puts phrase.downcase()
 ```
@@ -101,30 +112,36 @@ puts newPhrase.strip()
 ```
 
 The length() method,
-```puts phrase.length()
+```
+puts phrase.length()
 ```
 
 The include method,
-```puts phrase.include? "raff"
+```
+puts phrase.include? "raff"
 ```
 
 Get index of a string,
-```puts phrase[3]
+```
+puts phrase[3]
 ```
 
 Get range of indices in a string,
-```puts phrase[0,3]
+```
+puts phrase[0,3]
 ```
 output: Gir
 
 As can be seen this does not include index 3 but guves the first three characters of the string.
 
 Get the index of the first instance of a character in a string
-```puts phrase.index("c")
+```
+puts phrase.index("c")
 ```
 
 These method can be used on things other than variables
-```puts "programming".upcase()
+```
+puts "programming".upcase()
 ```
 
 9. [Math & Numbers](https://youtu.be/t_ispmWmdjY?t=2645)
