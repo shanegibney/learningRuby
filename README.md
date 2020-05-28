@@ -5,6 +5,7 @@ YouTube video - [Ruby Programming Language - Full Course](https://youtu.be/t_isp
 ### Content
 
 [Introduction to...](#Introductions)
+[Intro](#blah)
 
 [Windows Installation](#Windows%20Installation)
 Mac Installation
@@ -42,7 +43,7 @@ Interactive Ruby (irb)
 
 1. [Introduction](https://youtu.be/t_ispmWmdjY?t=399)
 
-1.1 [Intro](Introductions)
+1.1 [blah](Introductions)
 
 2. [Windows Installation](https://youtu.be/t_ispmWmdjY?t=83)
 Not applicable
