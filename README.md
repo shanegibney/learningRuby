@@ -3,8 +3,8 @@
 YouTube video - [Ruby Programming Language - Full Course](https://youtu.be/t_ispmWmdjY)
 
 [Introduction](#Introduction)
-[Introductions](#Introductions)
-Windows Installation
+
+[Windows Installation](#Windows Installation)
 Mac Installation
 Hello World / Setup
 Drawing a Shape
@@ -38,8 +38,7 @@ Inheritance
 Modules
 Interactive Ruby (irb)
 
-1. [<a name="Introduction"></a>](https://youtu.be/t_ispmWmdjY?t=399)
-1.1 [Introductions](https://youtu.be/t_ispmWmdjY?t=399)
+1. [Introduction](https://youtu.be/t_ispmWmdjY?t=399)
 
 2. [Windows Installation](https://youtu.be/t_ispmWmdjY?t=83)
 Not applicable
