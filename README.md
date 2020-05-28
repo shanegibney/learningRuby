@@ -4,7 +4,7 @@ YouTube video - [Ruby Programming Language - Full Course](https://youtu.be/t_isp
 
 [Introduction ](#Introduction)
 
-[Windows Installation](#Windows Installation)
+[Windows Installation](#Windows%20Installation)
 Mac Installation
 Hello World / Setup
 Drawing a Shape
