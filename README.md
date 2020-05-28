@@ -40,7 +40,9 @@ Inheritance
 Modules
 Interactive Ruby (irb)
 
-1. [Introductions](https://youtu.be/t_ispmWmdjY?t=399)
+1. [Introduction](https://youtu.be/t_ispmWmdjY?t=399)
+
+1.1 [Intro](Introductions)
 
 2. [Windows Installation](https://youtu.be/t_ispmWmdjY?t=83)
 Not applicable
