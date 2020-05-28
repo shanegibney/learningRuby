@@ -2,7 +2,7 @@
 
 YouTube video - [Ruby Programming Language - Full Course](https://youtu.be/t_ispmWmdjY)
 
-[Introduction ](#Introduction)
+[Introduction to...](#Introduction)
 
 [Windows Installation](#Windows%20Installation)
 Mac Installation
