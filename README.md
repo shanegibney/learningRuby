@@ -2,7 +2,7 @@
 
 YouTube video - [Ruby Programming Language - Full Course](https://youtu.be/t_ispmWmdjY)
 
-[Introduction to...](#Introduction)
+[Introduction to...](#Introductions)
 
 [Windows Installation](#Windows%20Installation)
 Mac Installation
@@ -38,7 +38,7 @@ Inheritance
 Modules
 Interactive Ruby (irb)
 
-1. [Introduction](https://youtu.be/t_ispmWmdjY?t=399)
+1. [Introductions](https://youtu.be/t_ispmWmdjY?t=399)
 
 2. [Windows Installation](https://youtu.be/t_ispmWmdjY?t=83)
 Not applicable
