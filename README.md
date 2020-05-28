@@ -2,6 +2,8 @@
 
 YouTube video - [Ruby Programming Language - Full Course](https://youtu.be/t_ispmWmdjY)
 
+### Content
+
 [Introduction to...](#Introductions)
 
 [Windows Installation](#Windows%20Installation)
