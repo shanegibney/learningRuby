@@ -2,7 +2,44 @@
 
 YouTube video - [Ruby Programming Language - Full Course](https://youtu.be/t_ispmWmdjY)
 
-1. [Introduction](https://youtu.be/t_ispmWmdjY?t=399)
+[Introduction](#Introduction)
+[Introductions](#Introductions)
+Windows Installation
+Mac Installation
+Hello World / Setup
+Drawing a Shape
+Variables
+Data Types
+Working With Strings
+Math & Numbers
+Getting User Input
+Building a Calculator
+Building a Mad Libs Game
+Arrays
+Hashes
+Methods
+Return Statement
+If Statements
+If Statements (continued)
+Building a Better Calculator
+Case Expressions
+While LoopsBuilding a Guessing Game
+For Loops
+Exponent Method
+Comments
+Reading Files
+Writing Files
+Handling Errors](https://youtu.be/t_ispmWmdjY?t=11195)
+Classes & Objects
+Initialize Method
+Object Methods
+Building a Quiz
+Inheritance
+Modules
+Interactive Ruby (irb)
+
+1. [<a name="Introduction"></a>](https://youtu.be/t_ispmWmdjY?t=399)
+1.1 [Introductions](https://youtu.be/t_ispmWmdjY?t=399)
 
 2. [Windows Installation](https://youtu.be/t_ispmWmdjY?t=83)
 Not applicable
@@ -128,9 +165,8 @@ puts phrase[3]
 
 Get range of indices in a string,
 ```
-puts phrase[0,3]
+puts phrase[0,3] # Gir
 ```
-output: Gir
 
 As can be seen this does not include index 3 but guves the first three characters of the string.
 
@@ -150,7 +186,6 @@ puts "programming".upcase()
 puts -5.9472
 puts 5 + 9 # 14
 ```
-Output: 14
 
 The usual operators and 2**3 is 2 to the power of 3, or the exponential. 2%3 is the modulus operator for remainder
 
@@ -216,6 +251,7 @@ puts 10/7.0 # 1.4285714285714286 returns a floating point number
 
 10. [Getting User Input](https://youtu.be/t_ispmWmdjY?t=3174)
 
+Can't use atom-runner to get user input. Will use terminal instead or install the Atom package platformio-ide-terminal.
 
 
 11. [Building a Calculator](https://youtu.be/t_ispmWmdjY?t=3669)
