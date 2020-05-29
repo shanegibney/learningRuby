@@ -3,9 +3,10 @@
 YouTube video - [Ruby Programming Language - Full Course](https://youtu.be/t_ispmWmdjY)
 
 ### Content
+<h2 id="my-header">My header</h2>
 
 [Introduction to...](#Introductions)
-[Intro](#blah)
+[Intro](blah)
 
 [Windows Installation](#Windows%20Installation)
 Mac Installation
@@ -43,7 +44,8 @@ Interactive Ruby (irb)
 
 1. [Introduction](https://youtu.be/t_ispmWmdjY?t=399)
 
-1.1 [blah](Introductions)
+
+1.1 [my-header](my header)
 
 2. [Windows Installation](https://youtu.be/t_ispmWmdjY?t=83)
 Not applicable
