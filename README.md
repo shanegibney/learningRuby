@@ -3,8 +3,8 @@
 YouTube video - [Ruby Programming Language - Full Course](https://youtu.be/t_ispmWmdjY)
 
 ### Content
-<h2 id="my-header">My header</h2>
 
+1.1 [my-header](#my-header)
 [Introduction to...](#Introductions)
 [Intro](blah)
 
@@ -44,8 +44,8 @@ Interactive Ruby (irb)
 
 1. [Introduction](https://youtu.be/t_ispmWmdjY?t=399)
 
+<h2 id="my-header">[My header](https://youtu.be/t_ispmWmdjY?t=399)</h2>
 
-1.1 [my-header](my header)
 
 2. [Windows Installation](https://youtu.be/t_ispmWmdjY?t=83)
 Not applicable
