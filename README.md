@@ -4,8 +4,7 @@ YouTube video - [Ruby Programming Language - Full Course](https://youtu.be/t_isp
 
 ### Content
 
-1.2 [Click to it](#abc)
-[Introduction](#Introduction)
+1. [Introduction](#Introduction)
 
 [Windows Installation](#Windows%20Installation)
 Mac Installation
@@ -42,9 +41,6 @@ Modules
 Interactive Ruby (irb)
 
 1. <a name="introduction" href="https://youtu.be/t_ispmWmdjY?t=399">Introduction</a>
-<!-- [Introduction](https://youtu.be/t_ispmWmdjY?t=399) -->
-
-<a name="abc" href="https://youtu.be/t_ispmWmdjY?t=399">I am a place</a>
 
 2. [Windows Installation](https://youtu.be/t_ispmWmdjY?t=83)
 Not applicable
