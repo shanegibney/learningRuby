@@ -103,7 +103,7 @@ print "hello ruby"
 ```
 ctrl+r to run atom-runner
 
-5. <a name="DrawingaShape" href="https://youtu.be/t_ispmWmdjY?t=721">Drawing a Shape</a>
+5. <a name="DrawingaShape" href="https://youtu.be/t_ispmWmdjY?t=721" target="_blank">Drawing a Shape</a>
 'print' does not include a new line, 'puts' does include a new line.
 ```
 print "hello"
@@ -292,6 +292,8 @@ puts 10/7.0 # 1.4285714285714286 returns a floating point number
 10. <a name="GettingUserInput" href="https://youtu.be/t_ispmWmdjY?t=3174">Getting User Input</a>
 
 Can't use atom-runner to get user input. Will use terminal instead or install the Atom package platformio-ide-terminal.
+
+
 
 11. <a name="BuildingaCalculator" href="https://youtu.be/t_ispmWmdjY?t=3669">Building a Calculator</a>
 
