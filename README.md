@@ -104,6 +104,7 @@ print "hello ruby"
 ctrl+r to run atom-runner
 
 5. <a name="DrawingaShape" href="https://youtu.be/t_ispmWmdjY?t=721" target="_blank">Drawing a Shape</a>
+
 'print' does not include a new line, 'puts' does include a new line.
 ```
 print "hello"
