@@ -2,7 +2,7 @@
 
 YouTube video - [Ruby Programming Language - Full Course](https://youtu.be/t_ispmWmdjY)
 
-### Content
+### Table of Contents
 
 1. [Introduction](#Introduction)
 
@@ -74,7 +74,7 @@ YouTube video - [Ruby Programming Language - Full Course](https://youtu.be/t_isp
 
 35. [Interactive Ruby (irb)](#InteractiveRubyirb)
 
-Blah blah start here
+### Content
 
 1. <a name="introduction" href="https://youtu.be/t_ispmWmdjY?t=399">Introduction</a>
 
@@ -94,7 +94,7 @@ $ \curl -sSL https://get.rvm.io | bash -s stable --rails
 $ ruby -v
 ruby 2.7.0p0 (2019-12-25 revision 647ee6f091) [x86_64-darwin18]
 ```
-4. [Hello World / Setup](https://youtu.be/t_ispmWmdjY?t=722)
+4. <a name="HelloWorldSetup" href="https://youtu.be/t_ispmWmdjY?t=722">Hello World / Setup</a>
 Add package atom-ruuner to Atom to run Ruby scripts inside Atom.
 giraffe.rb
 ```
@@ -102,7 +102,7 @@ print "hello ruby"
 ```
 ctrl+r to run atom-runner
 
-5. [Drawing a Shape](https://youtu.be/t_ispmWmdjY?t=721)
+5. <a name="DrawingaShape" href="https://youtu.be/t_ispmWmdjY?t=721">Drawing a Shape</a>
 'print' does not include a new line, 'puts' does include a new line.
 ```
 print "hello"
