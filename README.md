@@ -313,7 +313,7 @@ Hello john
 , you are cool!
 ```
 
-To gte rid of th new line character that happens when we get enter we use,
+To get rid of th new line character that happens when we get enter we use,
 
 ```
 name = gets.chomp()
@@ -538,12 +538,49 @@ states = {
   "blah" => 101
 }
 
+puts states["Oregon"] # OR
+puts states["New York"] # NY
 puts states[:Pennsylvania] # PA
 puts states[20] # Abc
+puts states["blah"] # 101
 ```
 15. <a name="Methods" href="https://youtu.be/t_ispmWmdjY?t=5263">Methods</a>
 
+Defining a method block between def and end,
+
+```
+def sayhi # define method
+  puts "hello user"
+end
+
+sayhi # call method
+```
+
+Passing parameters to a method
+
+```
+def myMethod(name, age)
+  puts ("Hello " + name + " you are " + age.to_s) # must convert number to a string to print
+end
+
+myMethod("John", 20)
+```
+
+Passing default values,
+
+```
+def myMethod2(name="Joey", age=101)
+    puts("I am " + name + " and I am " + age.to_s + " years old")
+end
+
+myMethod2("Sarah", 20) # without using efault values
+myMethod2() # uses default values
+myMethod2()
+```
+
 16. <a name="ReturnStatement" href="https://youtu.be/t_ispmWmdjY?t=5728">Return Statement</a>
+
+
 
 17. <a name="IfStatements" href="https://youtu.be/t_ispmWmdjY?t=6026">If Statements</a>
 
