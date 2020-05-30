@@ -6,7 +6,7 @@ YouTube video - [Ruby Programming Language - Full Course](https://youtu.be/t_isp
 
 1. [Introduction](#Introduction)
 
-2.[Windows Installation](#Windows%20Installation)
+2. [Windows Installation](#WindowsInstallation)
 
 Mac Installation
 Hello World / Setup
@@ -43,7 +43,7 @@ Interactive Ruby (irb)
 
 1. <a name="introduction" href="https://youtu.be/t_ispmWmdjY?t=399">Introduction</a>
 
-2. <a name="#Windows%20Installation" href="https://youtu.be/t_ispmWmdjY?t=83">Windows Installation</a>
+2. <a name="WindowsInstallation" href="https://youtu.be/t_ispmWmdjY?t=83">Windows Installation</a>
 Not applicable
 
 3. [Mac Installation](https://youtu.be/t_ispmWmdjY?t=285)
