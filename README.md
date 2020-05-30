@@ -42,7 +42,7 @@ YouTube video - [Ruby Programming Language - Full Course](https://youtu.be/t_isp
 
 19. [Building a Better Calculator](#BuildingaBetterCalculator)
 
-20. [Case Expressions](CaseExpressions)
+20. [Case Expressions](#CaseExpressions)
 
 21. [While Loops](#WhileLoops)
 
@@ -307,17 +307,11 @@ Can't use atom-runner to get user input. Will use terminal instead or install th
 
 17. <a name="IfStatements" href="https://youtu.be/t_ispmWmdjY?t=6026">If Statements (continued)</a>
 
-18. [If Statements (continued)](https://youtu.be/t_ispmWmdjY?t=6744)
+18. <a name="IfStatementscontinued" href="https://youtu.be/t_ispmWmdjY?t=6744"></a>
 
-<a name="IfStatementscontinued" href="https://youtu.be/t_ispmWmdjY?t=6744"></a>
+19. <a name="BuildingaBetterCalculator" href="https://youtu.be/t_ispmWmdjY?t=7151">Building a Better Calculator</a>
 
-19. [Building a Better Calculator](https://youtu.be/t_ispmWmdjY?t=7151)
-
-<a name="BuildingaBetterCalculator" href="https://youtu.be/t_ispmWmdjY?t=7151">Building a Better Calculator</a>
-
-20. [Case Expressions](https://youtu.be/t_ispmWmdjY?t=7639)
-
-<a name="CaseExpressions" href="https://youtu.be/t_ispmWmdjY?t=7639">Case Expressions</a>
+20. <a name="CaseExpressions" href="https://youtu.be/t_ispmWmdjY?t=7639">Case Expressions</a>
 
 21. <a name="WhileLoops" href="https://youtu.be/t_ispmWmdjY?t=8167">While Loops</a>
 
