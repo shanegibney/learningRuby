@@ -74,7 +74,7 @@ YouTube video - [Ruby Programming Language - Full Course](https://youtu.be/t_isp
 
 35. [Interactive Ruby (irb)](#InteractiveRubyirb)
 
-
+Blah blah start here
 
 1. <a name="introduction" href="https://youtu.be/t_ispmWmdjY?t=399">Introduction</a>
 
