@@ -376,9 +376,9 @@ num2 = gets.chomp()
 puts(num1.to_f + num2.to_f)
 ```
 
-Now e get the expected value when adding decimal numbers.
+Now we get the expected value when adding decimal numbers.
 
-The conversion to a floating point number can be done earlier using,
+The conversion to a floating point number can be done earlier in th code using,
 
 ```
 num1 = gets.chomp().to_f
@@ -413,7 +413,96 @@ puts ("I love " + celebrity)
 
 13. <a name="Arrays" href="https://youtu.be/t_ispmWmdjY?t=4365">Arrays</a>
 
-Arrays for holding multiple variables. Creating an array
+Arrays for holding multiple variables. Creating an array and output the elements
+
+```
+friends = Array["Kevin", "Karen", "Karl", "Kathryn"]
+puts friends
+```
+
+Output
+
+```
+Kevin
+Karen
+Karl
+Kathryn
+```
+
+We can store any data type in the same array
+
+```
+arr = Array[2, "Bob", false]
+```
+
+To refer to a single element arr[2], the array index starts at 0. A negative index counts from the end of the array
+
+```
+arr = Array[2, "Bob", false]
+puts arr
+
+puts # easy way to create a newline
+
+puts arr[2] # false third element in the array
+puts arr[0] # 2 first element in the array
+puts arr[-1] # false last element in the array
+puts arr[-2] # Bob second last element in the array
+```
+
+To get a range of elements from index 0 to 2 but not including 2,
+
+```
+friends[0,2]
+```
+
+Declaring an array without otting any values in to it
+
+```
+myArray = Array.new
+```
+
+Adding values and outputting the Array
+
+```
+myArray = Array.new # declares a new array with no value in it yet
+
+puts myArray[0] = "Bill"
+puts myArray[5] = "Brando"
+
+puts myArray # leaves a space for the elements not yet given a value
+```
+
+To get the number of elements in the array us the .length() method
+
+```
+puts friends.length()
+```
+
+To check for an elemnet in the array
+
+```
+puts friends.include? "Kathryn"
+```
+
+To reverse the order of the array
+
+```
+puts friends.reverse()
+```
+
+To sort an array of string alphabetically
+
+```
+puts friends.sort()
+```
+
+This is only possible if the data types are the same. If they are different this will throw an error.
+
+```
+mixed = Array["Bob", "bill", 1, "bozo"]
+
+puts mixed.sort()
+```
 
 
 
