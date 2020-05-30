@@ -504,10 +504,43 @@ mixed = Array["Bob", "bill", 1, "bozo"]
 puts mixed.sort()
 ```
 
-
-
 14. <a name="Hashes" href="https://youtu.be/t_ispmWmdjY?t=4891">Hashes</a>
 
+A hash allows you to store a key value pair. Often they are also called dictionaries.
+
+To create a hash and a few key value pairs.
+
+```
+states = {
+  "Pennsylvania" => "PA",
+  "New York" = > "NY",
+  "Oregon" => "OR"
+}
+
+puts states
+```
+
+Keys must be unique. Give key to get corresponding value,
+
+```
+puts states["Oregon"] # OR
+```
+
+The colon instead of the double quotation marks and numbers can be used and keys can be mapped to values,
+
+```
+states = {
+  :Pennsylvania => "PA",
+  "New York" => "NY",
+  "Oregon" => "OR",
+  20 => "Abc",
+  35 => "DEF",
+  "blah" => 101
+}
+
+puts states[:Pennsylvania] # PA
+puts states[20] # Abc
+```
 15. <a name="Methods" href="https://youtu.be/t_ispmWmdjY?t=5263">Methods</a>
 
 16. <a name="ReturnStatement" href="https://youtu.be/t_ispmWmdjY?t=5728">Return Statement</a>
