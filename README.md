@@ -76,7 +76,7 @@ YouTube video - [Ruby Programming Language - Full Course](https://youtu.be/t_isp
 
 ### Content
 
-1. <a name="introduction" href="https://youtu.be/t_ispmWmdjY?t=399">Introduction</a>
+1. <a name="introduction" href="https://youtu.be/t_ispmWmdjY">Introduction</a>
 
 2. <a name="WindowsInstallation" href="https://youtu.be/t_ispmWmdjY?t=83">Windows Installation</a>
 Not applicable
@@ -305,9 +305,9 @@ Can't use atom-runner to get user input. Will use terminal instead or install th
 
 16. <a name="ReturnStatement" href="https://youtu.be/t_ispmWmdjY?t=5728">Return Statement</a>
 
-17. <a name="IfStatements" href="https://youtu.be/t_ispmWmdjY?t=6026">If Statements (continued)</a>
+17. <a name="IfStatements" href="https://youtu.be/t_ispmWmdjY?t=6026">If Statements</a>
 
-18. <a name="IfStatementscontinued" href="https://youtu.be/t_ispmWmdjY?t=6744"></a>
+18. <a name="IfStatementscontinued" href="https://youtu.be/t_ispmWmdjY?t=6744">If Statements (continued)</a>
 
 19. <a name="BuildingaBetterCalculator" href="https://youtu.be/t_ispmWmdjY?t=7151">Building a Better Calculator</a>
 
