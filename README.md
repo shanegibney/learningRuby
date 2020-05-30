@@ -332,9 +332,90 @@ puts("Hello " + name + ", you are " + age)
 
 11. <a name="BuildingaCalculator" href="https://youtu.be/t_ispmWmdjY?t=3669">Building a Calculator</a>
 
+Input two numbers and try to add them
+
+```
+puts "Enter a number:"
+num1 = gets.chomp()
+puts "Enter another number"
+num2 = gets.chomp()
+puts(num1 + num2)
+```
+
+This outputs 24, you have expected 6. So all we did was concatenated the numbers instead of adding them. num1 and num2 are being dealt with as strings. So we need to convert the strings into numbers.
+
+Convert to an integre using,
+
+```
+num1.to_i
+```
+
+So we can use this,
+
+```
+puts "Enter a number:"
+num1 = gets.chomp()
+puts "Enter another number"
+num2 = gets.chomp()
+puts(num1.to_i + num2.to_i)
+```
+
+And this outputs the sum of the two numbers entered. But if we enter 2 and 5.4 this outputs 7 not 7.4 as expected. This is because we converted the strings to integers and so we are adding the integer value of 5.4 which is 5. Instead we convert the string inout in to floating point numbers using,
+
+```
+num1.to_f
+```
+
+and so using this,
+
+```
+puts "Enter a number:"
+num1 = gets.chomp()
+puts "Enter another number"
+num2 = gets.chomp()
+puts(num1.to_f + num2.to_f)
+```
+
+Now e get the expected value when adding decimal numbers.
+
+The conversion to a floating point number can be done earlier using,
+
+```
+num1 = gets.chomp().to_f
+```
+
+Updating our code gives,
+
+```
+puts "Enter a number:"
+num1 = gets.chomp().to_f
+puts "Enter another number"
+num2 = gets.chomp().to_f
+puts(num + num2)
+```
+
 12. <a name="BuildingaMadLibsGame" href="https://youtu.be/t_ispmWmdjY?t=4096">Building a Mad Libs Game  </a>
 
+A Mad Libs Game creates a story with different input words.
+
+```
+puts( "Enter a colour:")
+color = gets.chomp()
+puts( "Enter a plural noun:")
+plural_noun = gets.chomp()
+puts( "Enter a celebrity:")
+celebrity = gets.chomp()
+
+puts ("Roses are " + color)
+puts (plural_noun + " are blue")
+puts ("I love " + celebrity)
+```
+
 13. <a name="Arrays" href="https://youtu.be/t_ispmWmdjY?t=4365">Arrays</a>
+
+Arrays for holding multiple variables. Creating an array
+
+
 
 14. <a name="Hashes" href="https://youtu.be/t_ispmWmdjY?t=4891">Hashes</a>
 
