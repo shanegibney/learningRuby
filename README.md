@@ -575,14 +575,51 @@ end
 
 myMethod2("Sarah", 20) # without using efault values
 myMethod2() # uses default values
-myMethod2()
 ```
+
+Seems you either use all deault values or none.
 
 16. <a name="ReturnStatement" href="https://youtu.be/t_ispmWmdjY?t=5728">Return Statement</a>
 
+```
+def cube(num)
+    num * num * num # return the last line in the code block
+end
 
+puts cube(2)
+```
+
+Specify what to return
+
+```
+def myRet(num)
+  ret = num + 4
+  return ret # use the return key word to specify what you are returning
+end
+
+puts myRet(2)
+
+def myRet2(num) # incidentally the function above the same as this function
+  num + 4
+end
+
+puts myRet2(3)
+```
+
+Returning multiple values
+
+```
+def myRet3(num)
+  return num+1, num+101, num * num * num # returns three numbrs as an array
+end
+
+puts myRet3(3) # returns all three values
+puts myRet3(2)[2] # returns the third return value
+```
 
 17. <a name="IfStatements" href="https://youtu.be/t_ispmWmdjY?t=6026">If Statements</a>
+
+
 
 18. <a name="IfStatementscontinued" href="https://youtu.be/t_ispmWmdjY?t=6744">If Statements (continued)</a>
 
