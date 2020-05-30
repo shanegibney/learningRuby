@@ -103,7 +103,7 @@ print "hello ruby"
 ```
 ctrl+r to run atom-runner
 
-5. <a name="DrawingaShape" href="https://youtu.be/t_ispmWmdjY?t=721" target="_blank">Drawing a Shape</a>
+5. <a name="DrawingaShape" href="https://youtu.be/t_ispmWmdjY?t=721">Drawing a Shape</a>
 
 'print' does not include a new line, 'puts' does include a new line.
 ```
@@ -294,7 +294,41 @@ puts 10/7.0 # 1.4285714285714286 returns a floating point number
 
 Can't use atom-runner to get user input. Will use terminal instead or install the Atom package platformio-ide-terminal.
 
+Prompt an store input to variable name
 
+```
+name = gets
+```
+
+Output this variable with some text,
+
+```
+puts("Hello " + name + ", you are cool!")
+```
+
+unhelpfully outputs,
+
+```
+Hello john
+, you are cool!
+```
+
+To gte rid of th new line character that happens when we get enter we use,
+
+```
+name = gets.chomp()
+```
+
+Multiple inputs
+
+```
+puts "Enter your name"
+# name = gets
+name = gets.chomp() # gets rid of new line character when we inout to this variable
+puts "Enter your age"
+age = age.chomp()
+puts("Hello " + name + ", you are " + age)
+```
 
 11. <a name="BuildingaCalculator" href="https://youtu.be/t_ispmWmdjY?t=3669">Building a Calculator</a>
 
