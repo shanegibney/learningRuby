@@ -94,7 +94,7 @@ $ \curl -sSL https://get.rvm.io | bash -s stable --rails
 $ ruby -v
 ruby 2.7.0p0 (2019-12-25 revision 647ee6f091) [x86_64-darwin18]
 ```
-4. <a name="HelloWorldSetup" href="https://youtu.be/t_ispmWmdjY?t=722">Hello World / Setup</a>
+4. <a name="HelloWorldSetup" href="https://youtu.be/t_ispmWmdjY?t=398">Hello World / Setup</a>
 Add package atom-ruuner to Atom to run Ruby scripts inside Atom.
 giraffe.rb
 ```
