@@ -95,6 +95,7 @@ $ ruby -v
 ruby 2.7.0p0 (2019-12-25 revision 647ee6f091) [x86_64-darwin18]
 ```
 4. <a name="HelloWorldSetup" href="https://youtu.be/t_ispmWmdjY?t=398">Hello World / Setup</a>
+
 Add package atom-ruuner to Atom to run Ruby scripts inside Atom.
 giraffe.rb
 ```
@@ -122,7 +123,8 @@ puts "  /  |"
 puts " /___|"
 ```
 
-6. [Variables](https://youtu.be/t_ispmWmdjY?t=1097)
+6. <a name="Variables" href="https://youtu.be/t_ispmWmdjY?t=1097">Variables</a>
+
 ```
 character_name = "John"
 age = "35"
@@ -134,7 +136,7 @@ puts ("but didn't like being " + age + ".")
 ```
 puts(...) seems to work without the parenthesis.
 
-7. [Data Types](https://youtu.be/t_ispmWmdjY?t=1712)
+7. <a name="DataTypes" href="https://youtu.be/t_ispmWmdjY?t=1712">Data Types</a>
 
 String variable
 ```
@@ -162,7 +164,7 @@ nil data type
 flaws = nil
 ```
 
-8. [Working With Strings](https://youtu.be/t_ispmWmdjY?t=1993)
+8. <a name="WorkingWithStrings" href="https://youtu.be/t_ispmWmdjY?t=1993">Working With Strings</a>
 
 Escape a character inside a string
 ```
@@ -218,7 +220,7 @@ These method can be used on things other than variables
 puts "programming".upcase()
 ```
 
-9. [Math & Numbers](https://youtu.be/t_ispmWmdjY?t=2645)
+9. <a name="MathNumbers" href="https://youtu.be/t_ispmWmdjY?t=2645">Math & Numbers</a>
 
 ```
 puts -5.9472
@@ -287,57 +289,62 @@ puts 10/7 # 1 returns an integer
 puts 10/7.0 # 1.4285714285714286 returns a floating point number
 ```
 
-10. [Getting User Input](https://youtu.be/t_ispmWmdjY?t=3174)
+10. <a name="GettingUserInput" href="https://youtu.be/t_ispmWmdjY?t=3174">Getting User Input</a>
 
 Can't use atom-runner to get user input. Will use terminal instead or install the Atom package platformio-ide-terminal.
 
+11. <a name="BuildingaCalculator" href="https://youtu.be/t_ispmWmdjY?t=3669">Building a Calculator</a>
 
-11. [Building a Calculator](https://youtu.be/t_ispmWmdjY?t=3669)
+12. <a name="BuildingaMadLibsGame" href="https://youtu.be/t_ispmWmdjY?t=4096">Building a Mad Libs Game  </a>
 
-12. [Building a Mad Libs Game](https://youtu.be/t_ispmWmdjY?t=4096)
+13. <a name="Arrays" href="https://youtu.be/t_ispmWmdjY?t=4365">Arrays</a>
 
-13. [Arrays](https://youtu.be/t_ispmWmdjY?t=4365)
+14. <a name="Hashes" href="https://youtu.be/t_ispmWmdjY?t=4891">Hashes</a>
 
-14. [Hashes](https://youtu.be/t_ispmWmdjY?t=4891)
+15. <a name="Methods" href="https://youtu.be/t_ispmWmdjY?t=5263">Methods</a>
 
-15. [Methods](https://youtu.be/t_ispmWmdjY?t=5263)
+16. <a name="ReturnStatement" href="https://youtu.be/t_ispmWmdjY?t=5728">Return Statement</a>
 
-16. [Return Statement](https://youtu.be/t_ispmWmdjY?t=5728)
-
-17. [If Statements](https://youtu.be/t_ispmWmdjY?t=6026)
+17. <a name="IfStatements" href="https://youtu.be/t_ispmWmdjY?t=6026">If Statements (continued)</a>
 
 18. [If Statements (continued)](https://youtu.be/t_ispmWmdjY?t=6744)
 
+<a name="IfStatementscontinued" href="https://youtu.be/t_ispmWmdjY?t=6744"></a>
+
 19. [Building a Better Calculator](https://youtu.be/t_ispmWmdjY?t=7151)
+
+<a name="BuildingaBetterCalculator" href="https://youtu.be/t_ispmWmdjY?t=7151">Building a Better Calculator</a>
 
 20. [Case Expressions](https://youtu.be/t_ispmWmdjY?t=7639)
 
-21. [While Loops](https://youtu.be/t_ispmWmdjY?t=8167)
+<a name="CaseExpressions" href="https://youtu.be/t_ispmWmdjY?t=7639">Case Expressions</a>
 
-22. [Building a Guessing Game](https://youtu.be/t_ispmWmdjY?t=8557)
+21. <a name="WhileLoops" href="https://youtu.be/t_ispmWmdjY?t=8167">While Loops</a>
 
-23. [For Loops](https://youtu.be/t_ispmWmdjY?t=9329)
+22. <a name="BuildingaGuessingGame" href="https://youtu.be/t_ispmWmdjY?t=8557">Building a Guessing Game</a>
 
-24. [Exponent Method](https://youtu.be/t_ispmWmdjY?t=9602)
+23. <a name="ForLoops" href="https://youtu.be/t_ispmWmdjY?t=9329">For Loops</a>
 
-25. [Comments](https://youtu.be/t_ispmWmdjY?t=9886)
+24. <a name="ExponentMethod" href="https://youtu.be/t_ispmWmdjY?t=9602">Exponent Method</a>
 
-26. [Reading Files](https://youtu.be/t_ispmWmdjY?t=10163)
+25. <a name="Comments" href="https://youtu.be/t_ispmWmdjY?t=9886">Comments</a>
 
-27. [Writing Files](https://youtu.be/t_ispmWmdjY?t=10675)
+26. <a name="ReadingFiles" href="https://youtu.be/t_ispmWmdjY?t=10163">Reading Files</a>
 
-28. [Handling Errors](https://youtu.be/t_ispmWmdjY?t=11195)
+27. <a name="WritingFiles" href="https://youtu.be/t_ispmWmdjY?t=10675">Writing Files</a>
 
-29. [Classes & Objects](https://youtu.be/t_ispmWmdjY?t=11670)
+28. <a name="HandlingErrors" href="https://youtu.be/t_ispmWmdjY?t=11195"> Handling Errors</a>
 
-30. [Initialize Method](https://youtu.be/t_ispmWmdjY?t=12253)
+29. <a name="Classes&Objects" href="https://youtu.be/t_ispmWmdjY?t=11670">Classes & Objects</a>
 
-31. [Object Methods](https://youtu.be/t_ispmWmdjY?t=12707)
+30. <a name="InitializeMethod" href="https://youtu.be/t_ispmWmdjY?t=12253">Initialize Method</a>
 
-32. [Building a Quiz](https://youtu.be/t_ispmWmdjY?t=13031)
+31. <a name="ObjectMethods" href="https://youtu.be/t_ispmWmdjY?t=12707">Object Methods</a>
 
-33. [Inheritance](https://youtu.be/t_ispmWmdjY?t=13581)
+32. <a name="BuildingaQuiz" href="https://youtu.be/t_ispmWmdjY?t=13031">Building a Quiz</a>
 
-34. [Modules](https://youtu.be/t_ispmWmdjY?t=14030)
+33. <a name="Inheritance" href="https://youtu.be/t_ispmWmdjY?t=13581">Inheritance</a>
 
-35. [Interactive Ruby (irb)](https://youtu.be/t_ispmWmdjY?t=14346)
+34. <a name="Modules" href="https://youtu.be/t_ispmWmdjY?t=14030">Modules</a>
+
+35. <a name="InteractiveRubyirb" href="https://youtu.be/t_ispmWmdjY?t=14346">Interactive Ruby (irb)</a>
