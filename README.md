@@ -8,45 +8,79 @@ YouTube video - [Ruby Programming Language - Full Course](https://youtu.be/t_isp
 
 2. [Windows Installation](#WindowsInstallation)
 
-Mac Installation
-Hello World / Setup
-Drawing a Shape
-Variables
-Data Types
-Working With Strings
-Math & Numbers
-Getting User Input
-Building a Calculator
-Building a Mad Libs Game
-Arrays
-Hashes
-Methods
-Return Statement
-If Statements
-If Statements (continued)
-Building a Better Calculator
-Case Expressions
-While LoopsBuilding a Guessing Game
-For Loops
-Exponent Method
-Comments
-Reading Files
-Writing Files
-Handling Errors](https://youtu.be/t_ispmWmdjY?t=11195)
-Classes & Objects
-Initialize Method
-Object Methods
-Building a Quiz
-Inheritance
-Modules
-Interactive Ruby (irb)
+3. [Mac Installation](#MacInstallation)
+
+4. [Hello World / Setup](#HelloWorldSetup)
+
+5. [Drawing a Shape](#DrawingaShape)
+
+6. [Variables](#Variables)
+
+7. [Data Types](#DataTypes)
+
+8. [Working With Strings](#WorkingWithStrings)
+
+9. [Math & Numbers](#MathNumbers)
+
+10. [Getting User Input](#GettingUserInput)
+
+11. [Building a Calculator](#BuildingaCalculator)
+
+12. [Building a Mad Libs Game](#BuildingaMadLibsGame)
+
+13. [Arrays](#Arrays)
+
+14. [Hashes](#Hashes)
+
+15. [Methods](#Methods)
+
+16. [Return Statement](#ReturnStatement)
+
+17. [If Statements](#IfStatements)
+
+18. [If Statements (continued)](#IfStatementscontinued)
+
+19. [Building a Better Calculator](#BuildingaBetterCalculator)
+
+20. [Case Expressions](CaseExpressions)
+
+21. [While Loops](#WhileLoops)
+
+22. [Building a Guessing Game](#BuildingaGuessingGame)
+
+23. [For Loops](#ForLoops)
+
+24. [Exponent Method](#ExponentMethod)
+
+25. [Comments](#Comments)
+
+26. [Reading Files](#ReadingFiles)
+
+27. [Writing Files](#WritingFiles)
+
+28. [Handling Errors](#HandlingErrors)
+
+29. [Classes & Objects](#Classes&Objects)
+
+30. [Initialize Method](#InitializeMethod)
+
+31. [Object Methods](#ObjectMethods)
+
+32. [Building a Quiz](#BuildingaQuiz)
+
+33. [Inheritance](#Inheritance)
+
+34. [Modules](#Modules)
+
+35. [Interactive Ruby (irb)](#InteractiveRubyirb)
 
 1. <a name="introduction" href="https://youtu.be/t_ispmWmdjY?t=399">Introduction</a>
 
 2. <a name="WindowsInstallation" href="https://youtu.be/t_ispmWmdjY?t=83">Windows Installation</a>
 Not applicable
 
-3. [Mac Installation](https://youtu.be/t_ispmWmdjY?t=285)
+3. <a name="MacInstallation" href="https://youtu.be/t_ispmWmdjY?t=285">Mac Installation</a>
+
 Use RVM (Ruby Version manager) to update Ruby. [Instruction for installing RVM](https://rvm.io/)
 ```
 $ rvm -v
