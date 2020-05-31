@@ -344,7 +344,7 @@ puts(num1 + num2)
 
 This outputs 24, you have expected 6. So all we did was concatenated the numbers instead of adding them. num1 and num2 are being dealt with as strings. So we need to convert the strings into numbers.
 
-Convert to an integre using,
+Convert to an integer using,
 
 ```
 num1.to_i
@@ -687,6 +687,51 @@ end
 ```
 
 18. <a name="IfStatementscontinued" href="https://youtu.be/t_ispmWmdjY?t=6744">If Statements (continued)</a>
+
+Using comparisons in if statements. Return largest of three numbers
+
+```
+def max(num1,num2,num3)
+  if num1 >= num2 and num1 >= num3
+    return num1
+  elsif num2 >= num1 and num2 >= num3
+    return num2
+  else
+    return num3
+  end
+end
+
+puts ("Largest number is: " + max(45,12,4).to_s)
+```
+This max() methd can be written more efficiently
+
+```
+def maxRefactored(num1,num2,num3)
+  if num1 >= num2 and num1 >= num3
+    return num1
+  elsif num2 >= num3
+    return num2
+  else
+    return num3
+  end
+end
+
+puts ("Largest number is: " + maxRefactored(75,52,84).to_s)
+```
+
+Comparison operators in Ruby <, >, >=, <=, == The comparison operator '==' can also be used on Strings
+
+```
+name = "Joe"
+
+def comp(name)
+  if name == "Joe"
+    return "You have a great name!"
+  end
+end
+
+puts comp(name)
+```
 
 19. <a name="BuildingaBetterCalculator" href="https://youtu.be/t_ispmWmdjY?t=7151">Building a Better Calculator</a>
 
