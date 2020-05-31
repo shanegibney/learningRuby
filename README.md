@@ -811,6 +811,8 @@ Outputs
 5
 ```
 
+What about a do while loop in Ruby ?
+
 22. <a name="BuildingaGuessingGame" href="https://youtu.be/t_ispmWmdjY?t=8557">Building a Guessing Game</a>
 
 23. <a name="ForLoops" href="https://youtu.be/t_ispmWmdjY?t=9329">For Loops</a>
