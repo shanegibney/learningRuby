@@ -793,6 +793,24 @@ puts get_day_name("wed")
 
 21. <a name="WhileLoops" href="https://youtu.be/t_ispmWmdjY?t=8167">While Loops</a>
 
+```
+index = 1
+while index <= 5
+  puts index
+  index += 1 # increments
+end
+```
+
+Outputs
+
+```
+1
+2
+3
+4
+5
+```
+
 22. <a name="BuildingaGuessingGame" href="https://youtu.be/t_ispmWmdjY?t=8557">Building a Guessing Game</a>
 
 23. <a name="ForLoops" href="https://youtu.be/t_ispmWmdjY?t=9329">For Loops</a>
