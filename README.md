@@ -735,6 +735,29 @@ puts comp(name)
 
 19. <a name="BuildingaBetterCalculator" href="https://youtu.be/t_ispmWmdjY?t=7151">Building a Better Calculator</a>
 
+```
+puts "Enter first number:"
+num1 = gets.chomp().to_f # chomp() removes new line
+# and inputs from prompt are strings by default
+# and need to be converted to a floating point number using .to_f
+puts "Enter operator:"
+op = gets.chomp()
+puts "Enter second number:"
+num2 = gets.chomp().to_f
+
+if op == "+"
+  puts (num1 + num2)
+elsif op == "-"
+  puts (num1 - num2)
+elsif op == "/"
+  puts (num1 / num2)
+elsif op == "*"
+  puts (num1 * num2)
+else
+  puts "Invalid operator"
+end
+```
+
 20. <a name="CaseExpressions" href="https://youtu.be/t_ispmWmdjY?t=7639">Case Expressions</a>
 
 21. <a name="WhileLoops" href="https://youtu.be/t_ispmWmdjY?t=8167">While Loops</a>
