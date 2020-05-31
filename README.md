@@ -760,6 +760,37 @@ end
 
 20. <a name="CaseExpressions" href="https://youtu.be/t_ispmWmdjY?t=7639">Case Expressions</a>
 
+A case expression is a special type of if statement that can be used to check multiple conditions.
+
+```
+def get_day_name(day)
+  day_name = ""
+
+  case day
+    when "mon"
+      day_name = "Monday"
+    when "tue"
+      day_name = "Tuesday"
+    when "wed"
+      day_name = "Wednesday"
+    when "thu"
+      day_name = "Thursday"
+    when "fri"
+      day_name = "Friday"
+    when "sat"
+      day_name = "Saturday"
+    when "sun"
+      day_name = "Sunday"
+    else
+      day_name = "Invalid abbreviation"
+  end
+
+  return day_name
+end
+
+puts get_day_name("wed")
+```
+
 21. <a name="WhileLoops" href="https://youtu.be/t_ispmWmdjY?t=8167">While Loops</a>
 
 22. <a name="BuildingaGuessingGame" href="https://youtu.be/t_ispmWmdjY?t=8557">Building a Guessing Game</a>
