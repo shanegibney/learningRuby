@@ -1,5 +1,6 @@
-Jim, Sales
-Andy, Sales
+JhiyaSales
+hiya, Sales
 Kelly, Customer Services
 Creed, Quality Assurance
 Michael, Manager
+Oscar, Accounting

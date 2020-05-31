@@ -986,7 +986,99 @@ file.close()
 
 27. <a name="WritingFiles" href="https://youtu.be/t_ispmWmdjY?t=10675">Writing Files</a>
 
+We write to a file same as we did to read the file except that the mode is 'w'.
 
+Ruby file modes
+```
+Mode |  Meaning
+-----+--------------------------------------------------------
+"r"  |  Read-only, starts at beginning of file  (default mode).
+-----+--------------------------------------------------------
+"r+" |  Read-write, starts at beginning of file.
+-----+--------------------------------------------------------
+"w"  |  Write-only, truncates existing file
+     |  to zero length or creates a new file for writing.
+-----+--------------------------------------------------------
+"w+" |  Read-write, truncates existing file to zero length
+     |  or creates a new file for reading and writing.
+-----+--------------------------------------------------------
+"a"  |  Write-only, starts at end of file if file exists,
+     |  otherwise creates a new file for writing.
+-----+--------------------------------------------------------
+"a+" |  Read-write, starts at end of file if file exists,
+     |  otherwise creates a new file for reading and
+     |  writing.
+-----+--------------------------------------------------------
+"b"  |  Binary file mode (may appear with
+     |  any of the key letters listed above).
+     |  Suppresses EOL <-> CRLF conversion on Windows. And
+     |  sets external encoding to ASCII-8BIT unless explicitly
+     |  specified.
+-----+--------------------------------------------------------
+"t"  |  Text file mode (may appear with
+     |  any of the key letters listed above except "b").
+```
+
+To append to file we use the 'a' for append mode
+
+```
+File.open("employees.txt", "a") do |file|
+  file.write("\nOscar, Accounting")
+end
+```
+
+We write to a file same as we did to read the file except that the mode is 'w' This will overwrite the entire file and it will create a ne file if it does not exist
+
+```
+File.open("index.html", "w") do |file|
+  file.write("<h1>Hello</h>")
+end
+```
+
+Another file mode 'r+' allows us to red and write to the file at the same time. We could insert text at a specific point in the file. This uses the file cursor also called the file buffer.
+
+```
+
+```
+
+This changes the file employees.txt from
+
+```
+Jim, Sales
+Andy, Sales
+Kelly, Customer Services
+Creed, Quality Assurance
+Michael, Manager
+Oscar, Accounting
+```
+
+changes to
+
+```
+Jim, Sales
+hiya, Sales
+Kelly, Customer Services
+Creed, Quality Assurance
+Michael, Manager
+Oscar, Accounting
+```
+
+So it literally replaces part of the second line.
+
+To replace at a certain charcetr in the file
+
+```
+File.open("employees.txt", "r+") do |file|
+  file.readchar # this is the first character in the file
+  file.write("hiya") # this occurs at the next or second character in the file
+end
+```
+
+And this will change the first line to
+
+```
+JhiyaSales
+```
 
 28. <a name="HandlingErrors" href="https://youtu.be/t_ispmWmdjY?t=11195"> Handling Errors</a>
 
