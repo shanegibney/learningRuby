@@ -719,7 +719,7 @@ end
 puts ("Largest number is: " + maxRefactored(75,52,84).to_s)
 ```
 
-Comparison operators in Ruby <, >, >=, <=, == The comparison operator '==' can also be used on Strings
+Comparison operators in Ruby <, >, >=, <=, !=, == The comparison operator '==' can also be used on Strings
 
 ```
 name = "Joe"
@@ -811,11 +811,53 @@ Outputs
 5
 ```
 
-What about a do while loop in Ruby ?
+What about a do while loop in Ruby?
 
 22. <a name="BuildingaGuessingGame" href="https://youtu.be/t_ispmWmdjY?t=8557">Building a Guessing Game</a>
 
+Simply guessing games
+
+```
+secret_word ="giraffe"
+guess = ""
+
+while guess != secret_word
+  puts "Enter your guess: "
+  guess = gets.chomp()
+end
+
+puts "You Won!"
+```
+
+Limit number of guesses by counting the number of guesses
+
+```
+secret_word ="giraffe"
+guess = ""
+guess_count = 0
+guess_limit = 3
+out_of_guesses = false
+
+while guess != secret_word and !out_of_guesses
+  if guess_count < guess_limit
+    puts "Enter your guess: "
+    guess = gets.chomp()
+    guess_count += 1
+  else
+    out_of_guesses = true
+  end
+end
+
+if out_of_guesses
+  puts "You Lose!"
+else
+  puts "You Won!"
+end
+```
+
 23. <a name="ForLoops" href="https://youtu.be/t_ispmWmdjY?t=9329">For Loops</a>
+
+
 
 24. <a name="ExponentMethod" href="https://youtu.be/t_ispmWmdjY?t=9602">Exponent Method</a>
 
