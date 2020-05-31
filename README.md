@@ -939,9 +939,54 @@ comment
 
 26. <a name="ReadingFiles" href="https://youtu.be/t_ispmWmdjY?t=10163">Reading Files</a>
 
+Generate a file and add the content in the terminal
 
+```
+$ printf "Jim, Sales\nAndy, Sales\nKelly, Customer Services\nCreed, Quality Assurance\nMichael, Manager" > employees.txt
+```
+
+To open a file in Ruby we need to specify the file and mode, which in this case is 'read'. We use a 'do' to store the file we opened inside a variable called 'file'. The 'do' needs to be closed with 'end' to signify when we are finished having the file open to erad from it
+
+```
+File.open("employees.txt","r") do |file|
+  puts file.read() # does not work
+end
+```
+
+Some of the ways to read from a file
+
+```
+File.open("employees.txt","r") do |file|
+  # these work but not all at the same time for some reason
+  # puts file # to output the file and all its metadata but this in haxadecimal I think and not readable
+  # puts file.read().include? "Jim" # check if this string is in the file
+  # puts file.read() # read the whole file
+  # puts file.readline() # reads the first line of the file
+  # puts file.readline() # reads the second line of the file
+  # puts file.readchar() # reads the individual characters in the file
+  # puts file.readchar() # reads the individual characters in the file
+
+  # redlines is like an array
+  # puts file.redlines()[2] # to read the second line
+  for line in file.readlines()
+    puts line
+  end
+end
+```
+
+Another way to open a file, but using this method you must remember to close the file
+
+```
+file = File.open("employees.txt","r")
+
+puts file.read
+
+file.close()
+```
 
 27. <a name="WritingFiles" href="https://youtu.be/t_ispmWmdjY?t=10675">Writing Files</a>
+
+
 
 28. <a name="HandlingErrors" href="https://youtu.be/t_ispmWmdjY?t=11195"> Handling Errors</a>
 
