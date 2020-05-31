@@ -1038,7 +1038,10 @@ end
 Another file mode 'r+' allows us to red and write to the file at the same time. We could insert text at a specific point in the file. This uses the file cursor also called the file buffer.
 
 ```
-
+File.open("employees.txt", "r+") do |file|
+  file.readline # this is the first line of the file
+  file.write("hiya") # this occurs at the next or second line of the file
+end
 ```
 
 This changes the file employees.txt from
@@ -1082,6 +1085,63 @@ JhiyaSales
 
 28. <a name="HandlingErrors" href="https://youtu.be/t_ispmWmdjY?t=11195"> Handling Errors</a>
 
+Handling error using a rescue. Use the format
+
+```
+begin
+
+rescue
+
+end
+```
+
+Any code that might throw an error should be betwen 'begin' and 'rescue'. Using this the programme will not break
+
+```
+# num = 10/0 # trying to divide by zero will cause an Errors
+
+lucky_nums = [4, 8, 15, 16, 23, 42]
+
+# lucky_nums["dog"] # will get a type error
+
+begin
+  num = 10/0
+rescue
+  puts "Division by zero error"
+end
+```
+
+If you have two bits of code which could potentially break the programme you could name the rescue for each type of code and run code depending on which type of error is caused
+
+```
+begin
+  # num = 10/0
+  lucky_nums["dog"]
+rescue ZeroDivisionError
+  puts "Division by zero error"
+rescue TypeError
+  puts "Wrong type"
+end
+```
+
+You can store the exception that got throw in a variable
+
+```
+rescue TypeError => e
+```
+
+This is how to use that
+
+```
+begin
+  num = 10/0
+  lucky_nums["dog"]
+rescue ZeroDivisionError => z # rescue tags
+  puts z # divided by 0
+rescue TypeError => e
+  puts e # no implicit conversion of String into Integer
+end
+```
 29. <a name="Classes&Objects" href="https://youtu.be/t_ispmWmdjY?t=11670">Classes & Objects</a>
 
 30. <a name="InitializeMethod" href="https://youtu.be/t_ispmWmdjY?t=12253">Initialize Method</a>
