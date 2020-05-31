@@ -429,6 +429,13 @@ Karl
 Kathryn
 ```
 
+Note the Array keyword is not needed to create arrays. Arrays can just as easily be created with out it like this,
+
+```
+friends = ["Kevin", "Karen", "Oscar", "Angela", "Andy"]
+puts friends[1]
+```
+
 We can store any data type in the same array
 
 ```
@@ -857,9 +864,68 @@ end
 
 23. <a name="ForLoops" href="https://youtu.be/t_ispmWmdjY?t=9329">For Loops</a>
 
+A for loop allows us to loop through a specific collection which could be an array a a collection of numbers
 
+```
+friends = ["Kevin", "Karen", "Oscar", "Angela", "Andy"]
+puts friends[1]
+```
+
+Using 'for loop' to output every element in ana rray
+
+```
+for friend in friends
+  puts friend
+end
+```
+
+Doing the same thing with an '.each do' loop.
+
+```
+# this will do same as the previous for loop
+friends.each do |friend|
+  puts friend
+end
+```
+
+Loop through in a specific range sucha s 0 to 5 inclusively
+
+```
+for index in 0..5 # loop through in a specific range
+  puts index
+end
+
+for index in 10..15
+  puts index
+end
+```
+
+Another way to loop through a specific number of times,
+
+```
+6.times do |index|
+  puts index
+end
+```
 
 24. <a name="ExponentMethod" href="https://youtu.be/t_ispmWmdjY?t=9602">Exponent Method</a>
+
+```
+def pow(base_num, pow_num) # only works for positive exponentials
+  result = 1
+  pow_num.times do |index|
+    result = result * base_num
+  end
+
+  return result
+end
+
+puts pow(2,3)
+```
+
+This could be done using a recursive function
+
+
 
 25. <a name="Comments" href="https://youtu.be/t_ispmWmdjY?t=9886">Comments</a>
 
