@@ -925,11 +925,21 @@ puts pow(2,3)
 
 This could be done using a recursive function
 
-
-
 25. <a name="Comments" href="https://youtu.be/t_ispmWmdjY?t=9886">Comments</a>
 
+```
+# I am a single line comment
+
+=begin # no space before the '='
+this is a
+multi-line
+comment
+=end
+```
+
 26. <a name="ReadingFiles" href="https://youtu.be/t_ispmWmdjY?t=10163">Reading Files</a>
+
+
 
 27. <a name="WritingFiles" href="https://youtu.be/t_ispmWmdjY?t=10675">Writing Files</a>
 
