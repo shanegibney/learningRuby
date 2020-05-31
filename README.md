@@ -581,6 +581,8 @@ Seems you either use all deault values or none.
 
 16. <a name="ReturnStatement" href="https://youtu.be/t_ispmWmdjY?t=5728">Return Statement</a>
 
+The return key wor is not used it will return the last line of the code block
+
 ```
 def cube(num)
     num * num * num # return the last line in the code block
@@ -619,7 +621,70 @@ puts myRet3(2)[2] # returns the third return value
 
 17. <a name="IfStatements" href="https://youtu.be/t_ispmWmdjY?t=6026">If Statements</a>
 
+An if statement
 
+```
+ismale = true
+
+if ismale
+  puts "You are male"
+end
+```
+
+If else statement
+
+```
+ismale = true
+
+if ismale
+  puts "You are male"
+else
+  puts "You are not male"
+end
+```
+
+Double condition using the keyword 'and'
+
+```
+ismale = true
+istall = false
+
+if ismale and istall
+  puts "You are male and tall"
+else
+  puts "You are not male and tall"
+end
+```
+
+If or,
+
+```
+ismale = true
+istall = false
+
+if ismale or istall
+  puts "You are male or tall"
+else
+  puts "You are not male or tall or both"
+end
+```
+
+elseif and the negation opration '!'
+
+```
+ismale = true
+istall = false
+
+if ismale and istall
+  puts "You are a tall male" # is male and is tall
+elsif ismale and !istall # is male and is not tall
+  puts "You are a short male"
+elsif !ismale and istall # is not male and is tall
+  puts "You are not male but are tall"
+else
+  puts "You are not male and not tall" # is not male is not tall
+end
+```
 
 18. <a name="IfStatementscontinued" href="https://youtu.be/t_ispmWmdjY?t=6744">If Statements (continued)</a>
 
