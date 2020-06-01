@@ -1089,9 +1089,9 @@ Handling error using a rescue. Use the format
 
 ```
 begin
-
+  ...
 rescue
-
+  ...
 end
 ```
 
@@ -1143,6 +1143,56 @@ rescue TypeError => e
 end
 ```
 29. <a name="Classes&Objects" href="https://youtu.be/t_ispmWmdjY?t=11670">Classes & Objects</a>
+
+There are real world things like people, credit cards etc. that can not be represented with just a single type. Classes are unique data tpes that we can define. We will create a book data type and an object. Class starts with a capital letter. A class is a customer datatype.
+
+To declare the attributes of this class
+
+```
+attr_accessor :title, :author, :pages
+```
+
+Next we'll create an object which is an instance of a class.
+
+```
+book1 = Book.new()
+```
+
+Give values to the attributes for the object
+
+```
+book1.title = "Harry Potter"
+book1.author = "JK Rowling"
+book1.pages = "400"
+```
+
+Creating a class and an object
+
+```
+class Book
+  attr_accessor :title, :author, :pages
+end
+
+book1 = Book.new() # creates abook object
+book1.title = "Harry Potter" # asigning value to attributes
+book1.author = "JK Rowling"
+book1.pages = "400"
+
+puts book1.title
+puts book1.author
+puts book1.pages
+
+book2 = Book.new() # create another boook object
+book2.title = "Lord of the Rings"
+book2.author = "Tolkien"
+book2.pages = "500"
+
+puts book2.title
+puts book2.author
+puts book2.pages
+```
+
+In Ruby all data such as strings, integer etc. are all objects.
 
 30. <a name="InitializeMethod" href="https://youtu.be/t_ispmWmdjY?t=12253">Initialize Method</a>
 
