@@ -1344,8 +1344,101 @@ run_test(questions)
 
 33. <a name="Inheritance" href="https://youtu.be/t_ispmWmdjY?t=13581">Inheritance</a>
 
+Inhertiance allows us to extend the functionality of one clas, a superclass, into another class a subclass. The subclass will inherit all the attributes and method from the superclass.
 
+THe Chef class had three methods
+
+```
+class Chef
+  def make_chicken
+    puts "The chef makes"
+  end
+  def make_salad
+    puts "The chef makes"
+  end
+  def make_special_dish
+    puts "The chef makes"
+  end
+end
+
+chef = Chef.new()
+chef.make_chicken
+```
+
+Create another class of chef a more specialiased chef an Italian chef. The Italian chef has all the same method as the normal chef. This is done using '<'
+
+```
+class ItalianChef < Chef
+
+end
+```
+
+Create an Italianchef object and use one of the methods inherited from Chef.
+
+```
+class Chef
+  def make_chicken
+    puts "The chef makes chicken"
+  end
+  def make_salad
+    puts "The chef makes salad"
+  end
+  def make_special_dish
+    puts "The chef makes special dish"
+  end
+end
+
+class ItalianChef < Chef
+
+end
+
+chef = Chef.new()
+chef.make_chicken
+
+italian_chef = ItalianChef.new()
+italian_chef.make_salad
+```
+
+Next we will override the make_special_dish method inside the italian_chef class. We rewrite the make_special_dish method in the italian_chef class
+
+```
+class Chef # superclass
+  def make_chicken
+    puts "The chef makes chicken"
+  end
+  def make_salad
+    puts "The chef makes salad"
+  end
+  def make_special_dish
+    puts "The chef makes bbq ribs"
+  end
+end
+
+class ItalianChef < Chef # ItalianChef is a sublass
+  def make_special_dish
+    puts "The chef makes eggplant parma"
+  end
+  def make_pasta
+    puts "The chef makes pasta"
+  end
+end
+
+chef = Chef.new()
+chef.make_chicken
+puts chef.make_special_dish
+
+italian_chef = ItalianChef.new()
+italian_chef.make_salad
+puts italian_chef.make_special_dish
+puts italian_chef.make_pasta
+```
 
 34. <a name="Modules" href="https://youtu.be/t_ispmWmdjY?t=14030">Modules</a>
+
+A module is a container that stores groups of methods
+
+```
+
+```
 
 35. <a name="InteractiveRubyirb" href="https://youtu.be/t_ispmWmdjY?t=14346">Interactive Ruby (irb)</a>
