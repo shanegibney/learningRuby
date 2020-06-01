@@ -1373,7 +1373,7 @@ class ItalianChef < Chef
 end
 ```
 
-Create an Italianchef object and use one of the methods inherited from Chef.
+Create an ItalianChef object and use one of the methods inherited from Chef.
 
 ```
 class Chef
@@ -1435,10 +1435,62 @@ puts italian_chef.make_pasta
 
 34. <a name="Modules" href="https://youtu.be/t_ispmWmdjY?t=14030">Modules</a>
 
-A module is a container that stores groups of methods
+A module is a container that stores groups of methods. Modules are named with a capital letter, and are used to group methods with a similar functions. A simple module
 
 ```
+module Tools
+  def sayhi(name)
+    puts "hello #{name}"
+  end
 
+  def saybye(name)
+    puts "bye #{name}"
+  end
+
+  def sayhi(name)
+    puts "hello #{name}"
+  end
+end
+```
+
+Using methods that are in the module,
+
+```
+module Tools
+  def sayhi(name)
+    puts "hello #{name}"
+  end
+
+  def saybye(name)
+    puts "bye #{name}"
+  end
+end
+
+include Tools
+Tools.saybye("Mike")
+```
+
+If the module is in a different file to the one you want, use the keyword 'require'. 'require_relative' allows you to input a file name relative to the current file.'
+
+The module is in the file 34modules_useful_tools.rb
+
+```
+module Tools
+  def sayhi(name)
+    puts "hello #{name}"
+  end
+
+  def saybye(name)
+    puts "bye #{name}"
+  end
+end
+```
+
+The file that uses the module is require_relative "34modules_useful_tools.rb"
+
+```
+include Tools
+Tools.saybye("Mike") # calling the saybye() method which is inside the Tools module
 ```
 
 35. <a name="InteractiveRubyirb" href="https://youtu.be/t_ispmWmdjY?t=14346">Interactive Ruby (irb)</a>
