@@ -1494,3 +1494,38 @@ Tools.saybye("Mike") # calling the saybye() method which is inside the Tools mod
 ```
 
 35. <a name="InteractiveRubyirb" href="https://youtu.be/t_ispmWmdjY?t=14346">Interactive Ruby (irb)</a>
+
+Interactive Ruby allows Ruby to be run from the command line or terminal. If Ruby is installed on your computer the irb should be also. To check do
+
+```
+$ irb -v
+irb 1.2.1 (2019-12-24)
+```
+
+To run irb
+
+```
+$ irb
+2.7.0 :001 >
+```
+
+ and you will get an irb prompt. This will allow you to execute any valid Ruby commands.
+
+```
+2.7.0 :002 > num = 123
+2.7.0 :003 > puts num
+123
+```
+
+Or you could test a method,
+
+```
+2.7.0 :004 > def sayhi
+2.7.0 :005 >   puts "hello Ruby"
+2.7.0 :006 > end
+ => :sayhi
+2.7.0 :007 > sayhi
+hello Ruby
+```
+
+Use 'exit' to leave irb
