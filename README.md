@@ -1196,7 +1196,64 @@ In Ruby all data such as strings, integer etc. are all objects.
 
 30. <a name="InitializeMethod" href="https://youtu.be/t_ispmWmdjY?t=12253">Initialize Method</a>
 
+Previously we had to manually create the books attributes
+
+```
+book1 = Book.new() # creates abook object
+book1.title = "Harry Potter"
+book1.author = "JK Rowling"
+book1.pages = "400"
+```
+
+The initialise method is called whenever we create an object. This metho goes inside the class. Whenever we use the .new() method we are calling the initialize() method. We can pass a value into the initialize method using .new("Mike") if the initialize method is setup like this
+
+```
+class Book
+  attr_accessor :title, :author, :pages
+  def initialize(name)
+    puts ("hello " + name)
+  end
+end
+
+book1 = Book.new("Mike")
+book1.title = "Harry Potter" # asigning value to attributes
+book1.author = "JK Rowling"
+book1.pages = "400"
+```
+
+The initialize method is special because it gets called when we create an object. \@title referes to the 'title' attribute in our object, the one ':title'. The second title in that line referes to the title that gets passed in to the initialize method
+
+```
+@title = title
+```
+
+Putting this together
+
+```
+class Book
+  attr_accessor :title, :author, :pages
+  def initialize(title, author, pages)
+    @title = title
+    @author = author
+    @pages = pages
+  end
+end
+
+book1 = Book.new("Harry Potter", "JK Rowling", 400)
+book2 = Book.new("Lord of the Rings", "Tolkien", 500)
+
+puts book1.title
+puts book1.author
+puts book1.pages
+
+puts book2.title
+puts book2.author
+puts book2.pages
+```
+
 31. <a name="ObjectMethods" href="https://youtu.be/t_ispmWmdjY?t=12707">Object Methods</a>
+
+
 
 32. <a name="BuildingaQuiz" href="https://youtu.be/t_ispmWmdjY?t=13031">Building a Quiz</a>
 
