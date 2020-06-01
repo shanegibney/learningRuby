@@ -586,6 +586,18 @@ myMethod2() # uses default values
 
 Seems you either use all deault values or none.
 
+Note that if a method does not take parameters it does not need the parenthesis and so both of these are valid methods.
+
+```
+def has_honours()  this method doe take parameters
+
+end
+
+def has_honours # this method does not take parameters
+
+end
+```
+
 16. <a name="ReturnStatement" href="https://youtu.be/t_ispmWmdjY?t=5728">Return Statement</a>
 
 The return key wor is not used it will return the last line of the code block
@@ -1227,7 +1239,7 @@ The initialize method is special because it gets called when we create an object
 @title = title
 ```
 
-Putting this together
+Putting this together we can instead creat oject and assign values by passing parameters in to the new() method
 
 ```
 class Book
@@ -1253,9 +1265,49 @@ puts book2.pages
 
 31. <a name="ObjectMethods" href="https://youtu.be/t_ispmWmdjY?t=12707">Object Methods</a>
 
+Giving methods to a lass in Ruby. Creating Student data type.
 
+```
+class Student
+  attr_accessor :name, :major, :gpa
+  def initialize(name, major, gpa)
+    @name = name
+    @major = major
+    @gpa = gpa
+  end
+
+end
+
+book1 = Student.new("Jim", "Business", 2.6)
+book2 = Student.new("Pam", "Art", 3.6)
+```
+
+We want to add method to this to figure out whether a particular student has honours or not. This method goes inside the class but after the initialize method
+
+```
+class Student
+  attr_accessor :name, :major, :gpa
+  def initialize(name, major, gpa)
+    @name = name
+    @major = major
+    @gpa = gpa
+  end
+
+  def has_honours # this method has no parameter hence to parenthesis
+    if @gpa >= 3.5
+      return true
+    end
+    return false
+  end
+end
+
+puts student1.has_honours # false
+puts student2.has_honours # true
+```
 
 32. <a name="BuildingaQuiz" href="https://youtu.be/t_ispmWmdjY?t=13031">Building a Quiz</a>
+
+
 
 33. <a name="Inheritance" href="https://youtu.be/t_ispmWmdjY?t=13581">Inheritance</a>
 
