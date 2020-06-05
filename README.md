@@ -74,6 +74,7 @@ YouTube video - [Ruby Programming Language - Full Course](https://youtu.be/t_isp
 
 35. [Interactive Ruby (irb)](#InteractiveRubyirb)
 
+[Ruby Symbols](#RubySymbols)
 ### Content
 
 1. <a name="introduction" href="https://youtu.be/t_ispmWmdjY">Introduction</a>
@@ -1529,3 +1530,321 @@ hello Ruby
 ```
 
 Use 'exit' to leave irb
+
+## <a name="RubySymbols">Ruby Symbols</a>
+[Ruby's Symbols Explained](https://youtu.be/mBXGBbEbXZY)
+
+Symbols are used instead of strings.
+
+Examples
+
+```
+:x
+:y
+:controller
+:this_and_that
+```
+
+Symbols are scalar values objects used as identifiers, mapping immutable strings to fixed internal values. "Symbols are objects with names" - Jim Weirich, but we could also say they are values with names. 42 is the symbol for 42ness for teh quantity 42.
+
+Interpreters and compilers have the idea of a symbol table. This stores the name of things an interpreter or comiler knowns about. It stores the name of the symbol, the id and what that symbol points to.
+
+For example in Ruby
+
+```
+x = "hello"
+```
+ Ruby creates a string object that has the value "hello" stored within it. This gets an object id, all stored internally. This will also create a symbol 'x' because that is how we refer to it and a symbol also hs an id. That symbol with that od then points to that object.
+
+ Th symbol x might have the Ruby id of 417448, and then 2927381 reperesnts the object id of a string that says hello in it. So we are separating the concept of 'x'  and the string 'hello'. So 'x' just points to the string hello and that is the object id 2927381.
+
+ Consider another in Ruby
+
+ ```
+ y = 50
+ ```
+
+ So 'y' is another symbol, and maybe 'y' has an id on 438248 and the number 50 has an object id of 101. Now consider,
+
+ ```
+ z = 50
+ ```
+
+ 'z' is a different symbol from 'y' and so it has its own id maybe 471848, but 50 is still an object in Ruby but it is an immutable object and so it is the same object as the previous 50. And so we have the same object id 101.
+
+ Let's say
+
+ ```
+a = x
+ ```
+
+In Ruby we want the symbol 'a' to point to the same object as 'x' does and it has the same object id of 2927381.
+
+Consider
+
+```
+b = "hello"
+```
+
+This is an all new string object, this is not the same hello object as 'x' and 'a', so it has a different object id 957292846. In Ruby strings are immutable.
+
+Append to 'a' the following string
+
+```
+a << ", world!"
+```
+
+So now x will equal "hello, world!" and 'a' will equal "hello, world!" but b is tsill eual to just "hello" because it is a totally different object.
+
+On the symbol class there is a method called all_symbols
+
+```
+Symbol.all_symbols.size
+# => 1234 # this tells us there are 1234 symbols
+
+blah_blah_blah = 1234 # adds a new symbol to the symbol table
+
+Symbol.all_symbols.size
+# => 1235 # And now we see that there are 1235 symbols
+```
+
+Symbols represent values and strings "sort of" represent symbols.
+
+The symbol on the left anf the symbol on the right are the same thing
+
+```
+:x == :x
+```
+
+But defined like this, they are not the same
+
+```
+"x" != "x"
+```
+
+The '==' in Ruby looks at the content of the strings an compares them. But above ther are totally different objects in memory. So what can strings represent? Method names, fixed concepts, directions, shapes,members of sets, configuration opetion names,... They are unique identifiers they are not used for data. Strings are free form data, user supplied data.
+
+"If teh textual content of an object is important, use a String. If the identity of the object is important, use a Symbol." - Jim Weirich
+
+```
+Symbol.all_symbols.size
+  => 2025
+a = 1
+Symbol.all_symbols.size
+  => 2026
+
+Symbol.all_symbols.include?(:a)
+  => true # which would always be true
+```
+
+But if youbut any symbol in the last line it will always return true not just teh symbol :a.
+
+Making symbols, here is a symbol
+
+```
+:gender
+```
+
+Spaces are not allowed but quotation marks are allowed such as
+
+```
+:'gender'
+```
+
+and then a space coud be used but it is not recommended.
+
+A normal string can be converted to a symbol like this
+
+```
+"gender".to_sym
+# => :gender
+```
+
+It would normally it would not be used this way. In code .to_sym would be used for a string that you do not have control over, but otherwise you might as well type :gender and save yourself having to type all this code.  
+
+The concept of tking a string objct and turning it into soemthing internal that has one fixed value is often called interning
+
+```
+"gender".intern
+# => :gender
+```
+
+A third way to co vert a string to a symbol is like this
+
+```
+%s{gender}
+```
+
+This is like defining array with %w or strings with %q. So %s is another way of turning string into a symbol.
+
+To converta symbol into a string
+
+```
+:gender.to_s
+```
+
+Or you could use
+
+```
+:gender.id2name
+```
+
+This latter one is old and not erally used.
+
+So what are common symbols used for? In Ruby create a string and find the object id
+
+```
+"hello".object_id
+2153233000
+```
+
+If we do teh ame again we will get a different object id. So each string is a different object and is mutable. If we do the ame thing with symbol an check its object id will always be different  
+
+```
+:hello.object_id
+```
+
+Consider a simple hash
+
+```
+user = { 'name' => 'Fred', 'age' => 10}
+```
+
+If we had several users the 'name' and 'age' strings would keep being created as new objects
+
+We can check this with
+
+```
+user.keys
+```
+
+This would give us
+
+```
+["name","age"]
+```
+
+They we can map the object id in
+
+```
+user.keys.map(&:object_id)
+```
+
+Doing the same with a user2
+
+```
+user2 = { 'name' => 'Fred', 'age' => 10}
+user2.keys.map(&:object_id)
+```
+
+These will have different id's to user. So if you had several users you'd be dulicating needless stuff for the name and the age.
+
+So instead we will use symbols like this,
+
+```
+user = { :name => 'Fred', :age => 10}
+user2 = { :name => 'Fred', :age => 10}
+```
+
+Now looking at the id wwe will see that the objcct id's are the same
+
+```
+user.keys.map(&:object_id)
+user2.keys.map(&:object_id)
+```
+
+This makes them very efficient and is one of the main erasons we use them. So they can be used as keys within hashes. This is so common that in hashes symbols can be used by putting the colon after
+
+```
+user = { name: => 'Fred', age: => 10}
+```
+ But you would still use symbole to look up the values
+
+ ```
+user[:name]
+ ```
+
+ So symbols can be passed around just like an other object.
+
+ Consider a class and object of that class
+
+ ```
+class User
+  attr_accessor :name, :age, :gender
+end
+
+fred = User.new
+fred.name = "Fred"
+fred.age = 10
+p fred # p is for print or maybe puts???
+ ```
+
+attr_accessor is a method that is on the module class and it creates accessor methods such as getters and setters for the attributes. We are passing in symbols i.e., :name, :age and :gender That is common use of symbols.
+
+Another use of symbols would be if we had a string "hello" and we want to see does it respond to a method such as length
+
+```
+"hello".respond_to?(:length) # true
+```
+
+Does it respond to something else
+
+```
+"hello".respond_to?(:xyz) # fale s this is nonesense
+```
+
+If the last argument passed in to an argument is a hash then it does not need to be notated as a hash
+
+```
+def my_method(a, b, options)
+  p options
+end
+
+my_method 1, 2, { :age => 63, :alive => true}
+```
+
+WE could call te method instead like this, because if soemthing looks like  hash at the end of  method call it gets treated like one.
+
+```
+my_method 1, 2, :age => 63, :alive => true
+```
+
+This is often used for named parameter types. This could be done using a named parameter system
+
+```
+my_method 1, 2, age: 63, alive: true
+```
+
+Another use of symbols is in "symbol to proc". Consider an array where we want to create all these words in upper-case.
+
+```
+words = ["Hello", "world", "test"]
+
+p words.map { |word| word.upcase }
+```
+
+There is abetter way to do this
+
+```
+p words.map(&:upcase)
+```
+
+In that case a symbol is being used to represent the upcase method. The ampersand '&' in this case is coercing the symbol to become a proc object. A proc object is soemthing that can be passed off to a method and it can then be run however it wants. The map() method will run that proc mutliple times to do the mapping from one array to the new array.
+
+Previously symbols could not be coerced to procs. Someone thought it would be a better idea to add the method to the symbol class called to_proc which is what the to_& will call anyway on whatever object you pass in. Then we create a proc, accept an object and then we use the send method, which passes an object into an object which will run a particular method that is the same as the symbol that we've got.
+
+Essentially what that will do is run upcase for eah object for doing the mapping.
+
+Symbols are represented by immutable strings but Ruby 1.9 added methods to make symbols act more like immutable strings, which is confusing.
+
+In Ruby 1.9 you can call certain string methods upon symbols
+
+```
+:abcdef.upcase
+:abcdef.downcase
+:abcdef.length
+:abcdef[2]
+:abcdef.next
+```
+
+These should be looked on a value objects as identities.
