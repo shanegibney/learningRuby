@@ -1698,7 +1698,7 @@ So what are common symbols used for? In Ruby create a string and find the object
 2153233000
 ```
 
-If we do the ame again we will get a different object id. So each string is a different object and is mutable. If we do the ame thing with symbol an check its object id will always be different  
+If we do the name again we will get a different object id. So each string is a different object and is mutable. If we do the ame thing with symbol and check its object id will always be different  
 
 ```
 :hello.object_id
