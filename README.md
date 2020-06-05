@@ -1545,7 +1545,7 @@ Examples
 :this_and_that
 ```
 
-Symbols are scalar values objects used as identifiers, mapping immutable strings to fixed internal values. "Symbols are objects with names" - Jim Weirich, but we could also say they are values with names. 42 is the symbol for 42ness for teh quantity 42.
+Symbols are scalar values objects used as identifiers, mapping immutable strings to fixed internal values. "Symbols are objects with names" - Jim Weirich, but we could also say they are values with names. 42 is the symbol for 42ness for the quantity 42.
 
 Interpreters and compilers have the idea of a symbol table. This stores the name of things an interpreter or comiler knowns about. It stores the name of the symbol, the id and what that symbol points to.
 
@@ -1624,7 +1624,7 @@ But defined like this, they are not the same
 
 The '==' in Ruby looks at the content of the strings an compares them. But above ther are totally different objects in memory. So what can strings represent? Method names, fixed concepts, directions, shapes,members of sets, configuration opetion names,... They are unique identifiers they are not used for data. Strings are free form data, user supplied data.
 
-"If teh textual content of an object is important, use a String. If the identity of the object is important, use a Symbol." - Jim Weirich
+"If the textual content of an object is important, use a String. If the identity of the object is important, use a Symbol." - Jim Weirich
 
 ```
 Symbol.all_symbols.size
@@ -1637,7 +1637,7 @@ Symbol.all_symbols.include?(:a)
   => true # which would always be true
 ```
 
-But if youbut any symbol in the last line it will always return true not just teh symbol :a.
+But if you put any symbol in the last line it will always return true not just the symbol :a.
 
 Making symbols, here is a symbol
 
@@ -1662,7 +1662,7 @@ A normal string can be converted to a symbol like this
 
 It would normally it would not be used this way. In code .to_sym would be used for a string that you do not have control over, but otherwise you might as well type :gender and save yourself having to type all this code.  
 
-The concept of tking a string objct and turning it into soemthing internal that has one fixed value is often called interning
+The concept of taking a string object and turning it into soemthing internal that has one fixed value is often called interning
 
 ```
 "gender".intern
@@ -1689,7 +1689,7 @@ Or you could use
 :gender.id2name
 ```
 
-This latter one is old and not erally used.
+This latter one is old and not really used.
 
 So what are common symbols used for? In Ruby create a string and find the object id
 
@@ -1698,7 +1698,7 @@ So what are common symbols used for? In Ruby create a string and find the object
 2153233000
 ```
 
-If we do teh ame again we will get a different object id. So each string is a different object and is mutable. If we do the ame thing with symbol an check its object id will always be different  
+If we do the ame again we will get a different object id. So each string is a different object and is mutable. If we do the ame thing with symbol an check its object id will always be different  
 
 ```
 :hello.object_id
@@ -1737,7 +1737,7 @@ user2 = { 'name' => 'Fred', 'age' => 10}
 user2.keys.map(&:object_id)
 ```
 
-These will have different id's to user. So if you had several users you'd be dulicating needless stuff for the name and the age.
+These will have different id's to user. So if you had several users you'd be duplicating needless stuff for the name and the age.
 
 So instead we will use symbols like this,
 
@@ -1746,14 +1746,14 @@ user = { :name => 'Fred', :age => 10}
 user2 = { :name => 'Fred', :age => 10}
 ```
 
-Now looking at the id wwe will see that the objcct id's are the same
+Now looking at the id we will see that the objcct id's are the same
 
 ```
 user.keys.map(&:object_id)
 user2.keys.map(&:object_id)
 ```
 
-This makes them very efficient and is one of the main erasons we use them. So they can be used as keys within hashes. This is so common that in hashes symbols can be used by putting the colon after
+This makes them very efficient and is one of the main reasons we use them. So they can be used as keys within hashes. This is so common that in hashes symbols can be used by putting the colon after
 
 ```
 user = { name: => 'Fred', age: => 10}
@@ -1803,7 +1803,7 @@ end
 my_method 1, 2, { :age => 63, :alive => true}
 ```
 
-WE could call te method instead like this, because if soemthing looks like  hash at the end of  method call it gets treated like one.
+We could call the method instead like this, because if soemthing looks like  hash at the end of  method call it gets treated like one.
 
 ```
 my_method 1, 2, :age => 63, :alive => true
